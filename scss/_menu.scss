@@ -107,6 +107,10 @@
             // Slide in from bottom
             transform: translate3d(0, 0, 0);
         }
+
+        &.current > a {
+            color: $secondary-color;
+        }
     }
 
     .nav-link{
@@ -115,14 +119,10 @@
         font-size: 30px;
         text-transform: uppercase;
         padding: 1rem 0;
-        font-weight: 300;
+        font-weight: 500;
         color: #fff;
         text-decoration: none;
         @include easeOut;
-
-        &.current > a {
-            color: $secondary-color;
-        }
 
         &:hover {
             color: $secondary-color;
